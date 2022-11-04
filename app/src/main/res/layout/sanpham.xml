@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ListView
+        android:id="@+id/sanpham"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/tensanpham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="san pham cua ban la"
+            android:layout_marginHorizontal="50dp"
+            android:layout_toRightOf="@id/image" />
+        <TextView
+            android:id="@+id/mota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="san pham nay giup loai bo bui, banj vaf vi khuan"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginTop="15dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="so luong"
+            android:layout_toRightOf="@id/image"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/gia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@id/image"
+            android:text="gia cua san pham la" />
+        <RatingBar
+            android:id="@+id/danhgia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_alignTop="@+id/gia"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/danhgia"
+            android:layout_marginTop="69dp"
+            android:text="Phi van chuyen la: 16.000 nvd" />
+    </ListView>
+    <ListView
+        android:id="@+id/profileshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/sanpham"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:id="@+id/shop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+        <TextView
+            android:id="@+id/nameshop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="ten shop"
+            android:layout_toRightOf="@id/shop"/>
+        <TextView
+            android:id="@+id/contracter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Online"
+            android:layout_toRightOf="@id/shop"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_toRightOf="@id/shop"
+            android:text="dia chi shop" />
+    </ListView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:text="Hay de lai danh gia"
+            app:layout_constraintTop_toBottomOf="@id/profileshop" />
+</android.support.constraint.ConstraintLayout>
